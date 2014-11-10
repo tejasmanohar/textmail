@@ -41,7 +41,7 @@ get '/receive' do
       @client.messages.create(
         from: '+19284332264',
         to: params[:From],
-        body: "Hi Canaan, I know it's Friday, so I'll try to keep it short. In the past few weeks we were working on a new update, which is now a vailable on the AppStore. This version has ma ny improvements including a faster way to add tasks and notes right from the list, enhanced design, faster performance and support for iPhone 6 and 6 Plus. If you are enjoying 24me, it would be great if you could please leave a review. And as always I'd be happy for any feedback."
+        body: gmail.inbox.emails(:unread, :after => Date.today.prev_day)[0].body
       )
     end
   else
