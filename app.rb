@@ -11,8 +11,8 @@ configure :development do
 end
 
 Twilio.configure do |config|
-  config.account_sid = 'AC881f1d62823ef5127e2b2a7a1afa30f1'
-  config.auth_token = 'd743a50ba1688eba1cdba47a4eb63e51'
+  config.account_sid = ''
+  config.auth_token = ''
 end
 
 get '/' do  
