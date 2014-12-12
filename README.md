@@ -36,7 +36,7 @@ Text your Twilio phone number either of the following commands:
 - latest
   - replies with body of latest email in inbox
 
-Every command must be prefaced with "<youremail@gmail.com> <password>"
+Every command must be prefaced with "youremail@gmail.com password"
 
 ... for example,
 
