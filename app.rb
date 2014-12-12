@@ -24,7 +24,7 @@ get '/receive' do
     if command.eql? 'count'
       puts gmail.inbox.count(:unread)
       @client.messages.create(
-        from: '+19284332264',
+        from: ENV['MY_NUMBER'],
         to: params[:From],
         body: gmail.inbox.count(:unread)
       )
@@ -32,7 +32,7 @@ get '/receive' do
       gmail.peek = true
       puts gmail.inbox.emails(:unread, :after => Date.today.prev_day)[0].body
       @client.messages.create(
-        from: '+19284332264',
+        from: ENV['MY_NUMBER'],
         to: params[:From],
         body: gmail.inbox.emails(:unread, :after => Date.today.prev_day)[0].body
       )
