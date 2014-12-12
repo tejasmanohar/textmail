@@ -3,6 +3,8 @@ textmail.me
 
 check email via sms
 
+limited to gmail at this time
+
 Setup
 =====
 __Shell #1__
