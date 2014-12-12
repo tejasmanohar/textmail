@@ -1,5 +1,5 @@
-textmail.me
-===========
+textmail
+=========
 
 check email via sms
 
