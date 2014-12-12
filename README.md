@@ -21,4 +21,4 @@ __Shell #2__
 
 __Twilio__
 Enter __ngrok public tunnel__ + */receive* as *HTTP GET* request URL.
-!(https://raw.githubusercontent.com/tejas-manohar/textmail/master/screenshots/1.png)
+![Twilio Screenshot](https://raw.githubusercontent.com/tejas-manohar/textmail/master/screenshots/1.png)
