@@ -11,9 +11,6 @@ Twilio.configure do |config|
   config.auth_token = ENV['AUTH_TOKEN']
 end
 
-get '/' do
-end
-
 get '/receive' do
   @client = Twilio::REST::Client.new
   puts params[:Body]
