@@ -7,8 +7,8 @@ configure :development do
 end
 
 Twilio.configure do |config|
-  config.account_sid = ''
-  config.auth_token = ''
+  config.account_sid = ENV['ACCOUNT_SID']
+  config.auth_token = ENV['AUTH_TOKEN']
 end
 
 get '/' do  
