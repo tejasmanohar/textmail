@@ -36,4 +36,4 @@ Text your Twilio phone number either of the following commands:
 
 Every command must be prefaced with "<youremail@gmail.com> <password>"
 
-__Example:__ Text +1 233 332 4557 - `bob@gmail.com cheesecake95 count`
+Example: Text +1 233 332 4557 - `bob@gmail.com cheesecake95 count`
