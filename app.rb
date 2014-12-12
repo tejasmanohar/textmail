@@ -2,11 +2,8 @@ require 'sinatra'
 require 'gmail'
 require 'twilio-ruby'
 
-Bundler.require
-
-configure :development do   
-  set :bind, '0.0.0.0'   
-  set :port, 3000
+configure :development do
+  require 'sinatra/reloader'
 end
 
 Twilio.configure do |config|
