@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'gmail'
 require 'twilio-ruby'
-require 'bundler'
 
 Bundler.require
 
