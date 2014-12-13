@@ -13,7 +13,6 @@ end
 
 get '/receive' do
   @client = Twilio::REST::Client.new
-  puts params[:Body]
   message = params[:Body].split(' ')
   if message.length == 3
     username = message[0]
@@ -22,7 +21,6 @@ get '/receive' do
 
     gmail = Gmail.new(username, password)
     if command.eql? 'count'
-      puts gmail.inbox.count(:unread)
       @client.messages.create(
         from: ENV['MY_NUMBER'],
         to: params[:From],
@@ -30,11 +28,10 @@ get '/receive' do
       )
     elsif command.eql? 'latest'
       gmail.peek = true
-      puts gmail.inbox.emails(:unread, :after => Date.today.prev_day)[0].body
       @client.messages.create(
         from: ENV['MY_NUMBER'],
         to: params[:From],
-        body: gmail.inbox.emails(:unread, :after => Date.today.prev_day)[0].body
+        body: gmail.inbox.emails(:unread, :after => Date.today.prev_day)[0].message
       )
     end
   else
