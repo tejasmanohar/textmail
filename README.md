@@ -5,6 +5,7 @@ check email via sms
 
 limited to gmail at this timeg
 
+
 Setup
 =====
 __Shell #1__
@@ -26,6 +27,7 @@ __Twilio__
 
 Enter __ngrok public tunnel__ + */receive* as *HTTP GET* request URL.
 ![Twilio Screenshot](https://raw.githubusercontent.com/tejas-manohar/textmail/master/screenshots/1.png)
+
 
 Usage
 =====
